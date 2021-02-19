@@ -9,9 +9,8 @@ public class Main {
         //Creando la instancia del servidor.
         Javalin app = Javalin.create().start(7000);
         app.config.addStaticFiles("/publico");
-        app.get("/", ctx -> ctx.result("Hello World"));
 
-        //new Login(app).ejecutarRuta();
+        new Login(app).ejecutarRuta();
     }
 
 }

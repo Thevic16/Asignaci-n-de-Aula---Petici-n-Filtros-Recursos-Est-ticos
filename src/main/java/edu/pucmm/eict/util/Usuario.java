@@ -12,7 +12,7 @@ public class Usuario {
     public static boolean autentificar(String usuario, String contrasena){
         boolean ok = false;
 
-        if(usuario.equals("Victor") && contrasena.equals("12345")){
+        if(usuario.equals("admin") && contrasena.equals("admin")){
             ok = true;
         }
         return ok;

@@ -11,14 +11,22 @@ public class Login {
 
     public void ejecutarRuta(){
 
+
+        app.get("/",ctx -> {
+            ctx.redirect("/principal");
+        });
+
+
         app.get("/principal",ctx -> {
             Usuario usuario = ctx.sessionAttribute("usuario");
 
             if(usuario == null){
                 ctx.redirect("/login.html");
             }
+            else {
+                ctx.redirect("/index.html");
+            }
 
-            ctx.result("Pagina principal");
             //ctx.cookie("usuario","usuario",240);
             //ctx.sessionAttribute("usuario",usuario);
         });

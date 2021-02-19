@@ -1,6 +1,6 @@
-edu/pucmm/eict/Main.java
- edu.pucmm.eict.Main
 edu/pucmm/eict/util/Usuario.java
  edu.pucmm.eict.util.Usuario
+edu/pucmm/eict/Main.java
+ edu.pucmm.eict.Main
 edu/pucmm/eict/util/Login.java
  edu.pucmm.eict.util.Login

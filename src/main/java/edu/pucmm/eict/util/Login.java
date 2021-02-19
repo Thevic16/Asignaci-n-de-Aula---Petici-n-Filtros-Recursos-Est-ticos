@@ -11,13 +11,7 @@ public class Login {
 
     public void ejecutarRuta(){
 
-
         app.get("/",ctx -> {
-            ctx.redirect("/principal");
-        });
-
-
-        app.get("/principal",ctx -> {
             Usuario usuario = ctx.sessionAttribute("usuario");
 
             if(usuario == null){
@@ -39,7 +33,7 @@ public class Login {
             if(Usuario.autentificar(nombreUsuario,contrasena)){
                  usuario = new Usuario(nombreUsuario,contrasena);
                 ctx.sessionAttribute("usuario", usuario);
-                ctx.redirect("/principal");
+                ctx.redirect("/");
             }
             else{
                 ctx.redirect("/401.html");

@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario de Acceso</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
-<body>
-<h1>Formulario de Acceso</h1>
+<body .bg-dark>
+<h1 style="padding-left: 100px; padding-top: 100px">Formulario de Acceso</h1>
 <!-- Se encuentra en la clase CookiesSesionesControlador -->
-<form action="/autenticar" method="post">
+<form action="/autenticar" method="post" style="color: blue; padding: 200px" >
     Usuario: <input type="text" name="usuario" required/><br>
     Password: <input type="password" name="password" required/><br/>
-    <input type="submit" value="Enviar"/>
+    <input style="background: brown " type="submit" value="Enviar"/>
 </form>
 </body>
 </html>
